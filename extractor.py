@@ -7,14 +7,17 @@ from schemas import Extraction, Bill, RawEvidence, FactPatch, HistoricalEvidence
 from prompts import EXTRACTION_PROMPT, EVIDENCE_PROMPT, PROMPT_VERSION
 from storage import Cache, digest
 from validation import reliability, check_private
-from evidence import materialize_evidence, evidence_checks
+from evidence import materialize_evidence, evidence_checks, canonicalize_signs
 
 log = logging.getLogger(__name__)
 
-def source_images(path, boxes=()):
-    """EXIF orientation; preserve original pixels, no arbitrary bill-layout coordinates."""
+def source_images(path, boxes=(), max_side: int = 3072):
+    """EXIF orientation; preserve original aspect ratio; cap huge scan dimensions to max_side."""
     with Image.open(path) as original:
         image = ImageOps.exif_transpose(original).convert('RGB')
+        if max(image.size) > max_side:
+            ratio = max_side / max(image.size)
+            image = image.resize((int(image.width * ratio), int(image.height * ratio)), Image.Resampling.LANCZOS)
         output = io.BytesIO()
         image.save(output, format='PNG')
         images = [(output.getvalue(), 'image/png')]
@@ -58,16 +61,18 @@ class Extractor:
             if sum(bool(r.units_fact) for r in cached.evidence.history)<12:
                 cached=self.recover_history(path,cached)
                 self.cache.put(key,cached)
-            return cached
+            return canonicalize_signs(cached)
+        max_side = getattr(self.settings, 'max_image_side', 3072)
+        images = source_images(path, max_side=max_side)
         prompt = EXTRACTION_PROMPT + '\nFor this stage return ONLY the Bill schema. Rich evidence is extracted in a separate stage.\nSpecial recovery focus: ' + focus
-        bill = self.client.generate(prompt, Bill, source_images(path))
+        bill = self.client.generate(prompt, Bill, images)
         requested = [name for name,value in bill.model_dump().items() if value is not None and name not in ('charges','taxes')]
         requested += [f'charge_{i}' for i in range(len(bill.charges))] + [f'tax_{i}' for i in range(len(bill.taxes))]
         line_mapping = [{'id':f'charge_{i}','type':item.type} for i,item in enumerate(bill.charges)]
         line_mapping += [{'id':f'tax_{i}','type':item.type} for i,item in enumerate(bill.taxes)]
         # Do not pass monetary predictions to independent evidence reading: avoid anchoring.
         evidence_prompt = EVIDENCE_PROMPT + '\nRequired scalar/line fact IDs (read values independently from image):\n' + json.dumps(requested) + '\nLine classifications for ID mapping only, NO predicted amounts:\n' + json.dumps(line_mapping) + '\nSpecial recovery focus: ' + focus
-        evidence = materialize_evidence(self.client.generate(evidence_prompt, RawEvidence, source_images(path)))
+        evidence = materialize_evidence(self.client.generate(evidence_prompt, RawEvidence, images))
         result = Extraction(bill=bill, evidence=evidence)
         if sum(bool(r.units_fact) for r in evidence.history)<12:
             result=self.recover_history(path,result)
@@ -81,7 +86,7 @@ class Extractor:
             patch_ids=sorted({issue.split(':',1)[0] for issue in difficult})
             reread = 'Reread ONLY these requested source facts from this bill image. Return FactPatch. Each Fact.id MUST be exactly one of the IDs in the list below (no spaces or appended messages). Use visible printed text and source sections. Numeric values are printed strings, dates are ISO. Provider value is normalized KE, IESCO or LESCO. total_charges is the printed electricity/net electricity subtotal, NOT current_bill/grand total. Do not add FPA to create a subtotal. Do not recalculate amounts or copy identifiers. Null for unreadable.\nExact fact IDs:\n' + json.dumps(patch_ids) + '\nLine type mapping (no amounts):\n' + json.dumps(line_mapping)
             try:
-                patch = self.client.generate(reread, FactPatch, source_images(path, boxes))
+                patch = self.client.generate(reread, FactPatch, source_images(path, boxes, max_side=max_side))
                 facts = {f.id:f for f in evidence.facts}
                 facts.update({f.id:f for f in patch.facts})
                 evidence = evidence.model_copy(update={'facts':list(facts.values())})
@@ -99,7 +104,7 @@ class Extractor:
             # Extraction correction by image reread, never arithmetic reconciliation.
             reread_bill = prompt + '\nIndependent image evidence conflicts with preliminary fields. Reread ONLY printed values; do not sum or reconcile.\nConflicts:\n' + json.dumps(conflicts) + '\nSource observations:\n' + evidence.model_dump_json()
             try:
-                bill = self.client.generate(reread_bill, Bill, source_images(path))
+                bill = self.client.generate(reread_bill, Bill, images)
                 result = Extraction(bill=bill,evidence=evidence)
             except RuntimeError:
                 log.warning('Conflicting field reread unavailable; uncertainties recorded.')
@@ -113,10 +118,11 @@ class Extractor:
         if self.verifier and any(f.confidence in ('low', 'unreadable') for f in result.evidence.facts):
             verified = self.verify_cache.get(key, Extraction)
             if verified is None:
-                verified = self.verifier.verify(EXTRACTION_PROMPT, Extraction, source_images(path))
+                verified = self.verifier.verify(EXTRACTION_PROMPT, Extraction, images)
                 if verified: self.verify_cache.put(key, verified)
             if verified:
                 result = self.resolve_conflicts(path, result, verified)
+        result = canonicalize_signs(result)
         # Privacy is checked on internal evidence as well as official JSON.
         check_private(result.model_dump_json(), [self.settings.primary, self.settings.backup, self.settings.openai_key])
         self.cache.put(key, result)

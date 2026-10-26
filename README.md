@@ -15,6 +15,22 @@ Copy-Item .env.example .env
 
 Set `GOOGLE_API_KEY_PRIMARY` in your local `.env`. The configured runtime is `MODEL_PROVIDER=google`, `MODEL_NAME=gemini-3.5-flash-lite`. Keep OpenAI verification disabled to reproduce the submitted runtime configuration. `requirements.txt` pins direct dependencies; `requirements-lock.txt` pins all installed dependencies. Network access to the Google API is required.
 
+## Interactive Streamlit Web Application
+
+Launch the modern interactive web application to upload bills, inspect extractions, explore 13-month consumption analytics, and ask arbitrary questions:
+
+```powershell
+streamlit run app.py
+```
+
+### Application Features
+- **Side-by-Side Dual Pane**: View the original high-resolution bill image alongside extracted structured intelligence and analytics.
+- **Executive Metric Cards**: Instant display of Units Consumed, Payable Within Due Date, Current Month Bill, and Late Payment Surcharges.
+- **Visual Analytics**: Interactive Plotly charts for Charges vs. Taxes breakdown, 13-month historical consumption trends (with current month highlight), and Billed vs. Payment tracking.
+- **Live Grounded Q&A**: Ask *any* arbitrary plain-English question about the uploaded bill. Answers are produced via grounded planning, executed with deterministic Decimal arithmetic, and display step-by-step calculation traces with cited source facts.
+- **Level 1 Schema & Provenance**: Interactive Level 1 JSON preview with 1-click download, full evidence catalog, confidence ratings, and diagnostic reliability warnings.
+- **Dataset Navigator**: Easily switch between official test bills, training samples, or upload your own JPEG/PNG bill.
+
 ## Regenerate both official CSVs
 
 Place the original released `test-20261010T073553Z-1-001` folder beside `source/`. Run from `source/`:

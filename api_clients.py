@@ -3,6 +3,7 @@ import base64
 import json
 import logging
 import time
+import random
 import threading
 from decimal import Decimal
 from pathlib import Path
@@ -33,6 +34,19 @@ class GoogleClient:
         self.checked = False
         self.rate_lock = threading.Lock()
         self.last_request = 0.0
+        self.stats_lock = threading.Lock()
+        self.stats = {'calls': 0, 'seconds': 0.0, 'input_tokens': 0, 'output_tokens': 0}
+
+    def _record(self, seconds, response):
+        """Usage accounting only; never stores prompts, images or provider payloads."""
+        usage = getattr(response, 'usage_metadata', None)
+        lock = getattr(self, 'stats_lock', None)
+        if lock is None: return
+        with lock:
+            self.stats['calls'] += 1
+            self.stats['seconds'] += seconds
+            self.stats['input_tokens'] += int(getattr(usage, 'prompt_token_count', 0) or 0)
+            self.stats['output_tokens'] += int(getattr(usage, 'candidates_token_count', 0) or 0)
 
     def check_model(self):
         if not self.checked:
@@ -44,7 +58,8 @@ class GoogleClient:
         for attempt in range(self.settings.retries + 1):
             try:
                 with self.rate_lock:
-                    remaining=4.2-(time.monotonic()-self.last_request)
+                    interval = getattr(self.settings, 'min_request_interval', 4.2)
+                    remaining=interval-(time.monotonic()-self.last_request)
                     if remaining>0: time.sleep(remaining)
                     self.last_request=time.monotonic()
                 return call(self.primary)
@@ -56,7 +71,8 @@ class GoogleClient:
                     raise ProviderError(f'Google request failed ({type(exc).__name__}, status={last_code}); check model/account/request.') from None
                 if attempt < self.settings.retries:
                     log.warning('Google transient error status=%s; bounded retry %s', last_code, attempt + 1)
-                    time.sleep(min(2 ** attempt, 16))
+                    # Exponential backoff with jitter avoids synchronized retries from worker threads.
+                    time.sleep(min(2 ** attempt, 16) + random.uniform(0, 0.5))
         # No quota-key rotation, including when independence is configured.
         if self.backup is not None and last_code in (500, 502, 503, 504):
             try: return call(self.backup)
@@ -70,12 +86,14 @@ class GoogleClient:
         for image_bytes, mime in images:
             contents.append(self.types.Part.from_bytes(data=image_bytes, mime_type=mime))
         for parse_attempt in range(2):
+            started = time.monotonic()
             response = self._retry(lambda client: client.models.generate_content(
                 model=self.settings.model, contents=contents,
                 config=self.types.GenerateContentConfig(temperature=0,
                     max_output_tokens=18000, response_mime_type='application/json',
                     automatic_function_calling=self.types.AutomaticFunctionCallingConfig(disable=True),
                     response_json_schema=schema.model_json_schema())))
+            self._record(time.monotonic() - started, response)
             if not response.text:
                 raise ProviderError('Google returned no JSON; no fabricated fallback.')
             try: return schema.model_validate_json(response.text)

@@ -272,6 +272,11 @@ Grounding errors to address: '''+json.dumps(remaining)
         self.cache.put(key, QAArtifact(extraction=extraction, plans=plans))
         return extraction, answers
 
+    def answer_single(self, path: Path, extraction, question: str, question_id: str = 'user_q'):
+        """Answer a single ad-hoc customer query using the grounded planning pipeline."""
+        _, answers = self.answer_batch(path, extraction, [{'question_id': question_id, 'question': question}])
+        return answers[question_id]
+
     @staticmethod
     def check_ids(plans, questions):
         ids = [p.question_id for p in plans.plans]

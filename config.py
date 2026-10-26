@@ -21,6 +21,12 @@ class Settings:
     budget: Decimal = Decimal('1.00')
     retries: int = 3
     cache_dir: Path = Path('cache')
+    # Free-tier Gemini allows 15 requests/minute; 4.2 s spacing keeps one process safe.
+    # Paid accounts can lower this (e.g. 0) to remove artificial latency.
+    min_request_interval: float = 4.2
+    # Long-side pixel cap for images sent to the model. Phone photos above this
+    # size add upload time without adding legible detail; crops are still upscaled.
+    max_image_side: int = 3072
 
     def __post_init__(self):
         if self.model not in APPROVED or not self.model.startswith('gemini-'):
@@ -31,6 +37,10 @@ class Settings:
             raise ValueError('Optional verification is restricted to gpt-4.1-mini.')
         if not self.budget.is_finite() or self.budget < 0 or not 0 <= self.retries <= 5:
             raise ValueError('Invalid budget or retry bound.')
+        if not 0 <= self.min_request_interval <= 60:
+            raise ValueError('MIN_REQUEST_INTERVAL must be between 0 and 60 seconds.')
+        if not 768 <= self.max_image_side <= 8192:
+            raise ValueError('MAX_IMAGE_SIDE must be between 768 and 8192 pixels.')
 
     @classmethod
     def load(cls):
@@ -46,7 +56,9 @@ class Settings:
                    verification_model=env.get('OPENAI_VERIFICATION_MODEL') or 'gpt-4.1-mini',
                    budget=Decimal(env.get('OPENAI_BUDGET_USD') or '1.00'),
                    retries=int(env.get('MAX_RETRIES') or '3'),
-                   cache_dir=Path(env.get('CACHE_DIR') or 'cache'))
+                   cache_dir=Path(env.get('CACHE_DIR') or 'cache'),
+                   min_request_interval=float(env.get('MIN_REQUEST_INTERVAL') or '4.2'),
+                   max_image_side=int(env.get('MAX_IMAGE_SIDE') or '3072'))
 
     def require_primary(self):
         if not self.primary or self.primary.startswith(('YOUR_', 'REPLACE_')):
