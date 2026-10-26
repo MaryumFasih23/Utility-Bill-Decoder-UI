@@ -1,0 +1,4398 @@
+{
+  "valid": true,
+  "level1_rows": 5,
+  "level2_rows": 60,
+  "official": false,
+  "bills": [
+    {
+      "bill_id": "KESC_0008",
+      "warnings": [],
+      "answers": {
+        "practice_01": {
+          "answer": "Taxes account for 16.61% of the current bill.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "step_1",
+              "operation": "percentage",
+              "operands": [
+                "total_taxes",
+                "current_bill"
+              ],
+              "operand_values": [
+                "569.62",
+                "3430.24"
+              ],
+              "exact_result": "16.60583516022202528102989878",
+              "formatted_result": "16.61",
+              "unit": "%"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "current_bill",
+              "section": "bill_calculation",
+              "printed_text": "3,430.24"
+            },
+            {
+              "id": "total_taxes",
+              "section": "bill_calculation",
+              "printed_text": "569.62"
+            }
+          ]
+        },
+        "practice_02": {
+          "answer": "The difference between the after-due and within-due amounts is 286 PKR.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "step_1",
+              "operation": "difference",
+              "operands": [
+                "payable_after_due_date",
+                "payable_within_due_date"
+              ],
+              "operand_values": [
+                "3716",
+                "3430"
+              ],
+              "exact_result": "286",
+              "formatted_result": "286",
+              "unit": "PKR"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "payable_after_due_date",
+              "section": "header",
+              "printed_text": "3,716"
+            },
+            {
+              "id": "payable_within_due_date",
+              "section": "header",
+              "printed_text": "3,430"
+            }
+          ]
+        },
+        "practice_03": {
+          "answer": "The highest consumption in the historical period was 239 kWh. Month(s): 2025-07.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "step_1",
+              "operation": "maximum",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units",
+                "history_cell_12_units"
+              ],
+              "operand_values": [
+                "141",
+                "138",
+                "197",
+                "239",
+                "203",
+                "176",
+                "173",
+                "187",
+                "124",
+                "96",
+                "88",
+                "115",
+                "151"
+              ],
+              "exact_result": "239",
+              "formatted_result": "239",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "usage_chart",
+              "printed_text": "141"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "88"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "115"
+            },
+            {
+              "id": "history_cell_12_units",
+              "section": "usage_chart",
+              "printed_text": "151"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "usage_chart",
+              "printed_text": "138"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "usage_chart",
+              "printed_text": "197"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "usage_chart",
+              "printed_text": "239"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "usage_chart",
+              "printed_text": "203"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "usage_chart",
+              "printed_text": "176"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "usage_chart",
+              "printed_text": "173"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "usage_chart",
+              "printed_text": "187"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "usage_chart",
+              "printed_text": "124"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "96"
+            }
+          ]
+        },
+        "practice_04": {
+          "answer": "The lowest consumption in the historical period was 88 kWh. Month(s): 2026-02.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "step_1",
+              "operation": "minimum",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units",
+                "history_cell_12_units"
+              ],
+              "operand_values": [
+                "141",
+                "138",
+                "197",
+                "239",
+                "203",
+                "176",
+                "173",
+                "187",
+                "124",
+                "96",
+                "88",
+                "115",
+                "151"
+              ],
+              "exact_result": "88",
+              "formatted_result": "88",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "usage_chart",
+              "printed_text": "141"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "88"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "115"
+            },
+            {
+              "id": "history_cell_12_units",
+              "section": "usage_chart",
+              "printed_text": "151"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "usage_chart",
+              "printed_text": "138"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "usage_chart",
+              "printed_text": "197"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "usage_chart",
+              "printed_text": "239"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "usage_chart",
+              "printed_text": "203"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "usage_chart",
+              "printed_text": "176"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "usage_chart",
+              "printed_text": "173"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "usage_chart",
+              "printed_text": "187"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "usage_chart",
+              "printed_text": "124"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "96"
+            }
+          ]
+        },
+        "practice_05": {
+          "answer": "The average consumption across the historical period was 156 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "step_1",
+              "operation": "average",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units",
+                "history_cell_12_units"
+              ],
+              "operand_values": [
+                "141",
+                "138",
+                "197",
+                "239",
+                "203",
+                "176",
+                "173",
+                "187",
+                "124",
+                "96",
+                "88",
+                "115",
+                "151"
+              ],
+              "exact_result": "156",
+              "formatted_result": "156",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "usage_chart",
+              "printed_text": "141"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "88"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "115"
+            },
+            {
+              "id": "history_cell_12_units",
+              "section": "usage_chart",
+              "printed_text": "151"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "usage_chart",
+              "printed_text": "138"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "usage_chart",
+              "printed_text": "197"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "usage_chart",
+              "printed_text": "239"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "usage_chart",
+              "printed_text": "203"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "usage_chart",
+              "printed_text": "176"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "usage_chart",
+              "printed_text": "173"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "usage_chart",
+              "printed_text": "187"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "usage_chart",
+              "printed_text": "124"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "96"
+            }
+          ]
+        },
+        "practice_06": {
+          "answer": "The total consumption across the historical period was 2028 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "step_1",
+              "operation": "sum",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units",
+                "history_cell_12_units"
+              ],
+              "operand_values": [
+                "141",
+                "138",
+                "197",
+                "239",
+                "203",
+                "176",
+                "173",
+                "187",
+                "124",
+                "96",
+                "88",
+                "115",
+                "151"
+              ],
+              "exact_result": "2028",
+              "formatted_result": "2028",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "usage_chart",
+              "printed_text": "141"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "88"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "115"
+            },
+            {
+              "id": "history_cell_12_units",
+              "section": "usage_chart",
+              "printed_text": "151"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "usage_chart",
+              "printed_text": "138"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "usage_chart",
+              "printed_text": "197"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "usage_chart",
+              "printed_text": "239"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "usage_chart",
+              "printed_text": "203"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "usage_chart",
+              "printed_text": "176"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "usage_chart",
+              "printed_text": "173"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "usage_chart",
+              "printed_text": "187"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "usage_chart",
+              "printed_text": "124"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "96"
+            }
+          ]
+        },
+        "practice_07": {
+          "answer": "There are 2 months with consumption above 200 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "step_1",
+              "operation": "count_above",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units",
+                "history_cell_12_units",
+                "200"
+              ],
+              "operand_values": [
+                "141",
+                "138",
+                "197",
+                "239",
+                "203",
+                "176",
+                "173",
+                "187",
+                "124",
+                "96",
+                "88",
+                "115",
+                "151",
+                "200"
+              ],
+              "exact_result": "2",
+              "formatted_result": "2",
+              "unit": "months"
+            }
+          ],
+          "verified_prose_numbers": [
+            "200"
+          ],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "usage_chart",
+              "printed_text": "141"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "88"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "115"
+            },
+            {
+              "id": "history_cell_12_units",
+              "section": "usage_chart",
+              "printed_text": "151"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "usage_chart",
+              "printed_text": "138"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "usage_chart",
+              "printed_text": "197"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "usage_chart",
+              "printed_text": "239"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "usage_chart",
+              "printed_text": "203"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "usage_chart",
+              "printed_text": "176"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "usage_chart",
+              "printed_text": "173"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "usage_chart",
+              "printed_text": "187"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "usage_chart",
+              "printed_text": "124"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "96"
+            }
+          ]
+        },
+        "practice_08": {
+          "answer": "There are 2 months with consumption below 100 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "step_1",
+              "operation": "count_below",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units",
+                "history_cell_12_units",
+                "100"
+              ],
+              "operand_values": [
+                "141",
+                "138",
+                "197",
+                "239",
+                "203",
+                "176",
+                "173",
+                "187",
+                "124",
+                "96",
+                "88",
+                "115",
+                "151",
+                "100"
+              ],
+              "exact_result": "2",
+              "formatted_result": "2",
+              "unit": "months"
+            }
+          ],
+          "verified_prose_numbers": [
+            "100"
+          ],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "usage_chart",
+              "printed_text": "141"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "88"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "115"
+            },
+            {
+              "id": "history_cell_12_units",
+              "section": "usage_chart",
+              "printed_text": "151"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "usage_chart",
+              "printed_text": "138"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "usage_chart",
+              "printed_text": "197"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "usage_chart",
+              "printed_text": "239"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "usage_chart",
+              "printed_text": "203"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "usage_chart",
+              "printed_text": "176"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "usage_chart",
+              "printed_text": "173"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "usage_chart",
+              "printed_text": "187"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "usage_chart",
+              "printed_text": "124"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "96"
+            }
+          ]
+        },
+        "practice_09": {
+          "answer": "The average billed amount across the available billing history is 2713.46 PKR.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "step_1",
+              "operation": "average",
+              "operands": [
+                "history_cell_9_billed",
+                "history_cell_10_billed",
+                "history_cell_11_billed"
+              ],
+              "operand_values": [
+                "2780.55",
+                "2782.51",
+                "2577.31"
+              ],
+              "exact_result": "2713.456666666666666666666667",
+              "formatted_result": "2713.46",
+              "unit": "PKR"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_10_billed",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "2,782.51"
+            },
+            {
+              "id": "history_cell_11_billed",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "2,577.31"
+            },
+            {
+              "id": "history_cell_9_billed",
+              "section": "usage_chart_and_payment_history",
+              "printed_text": "2,780.55"
+            }
+          ]
+        },
+        "practice_10": {
+          "answer": "The difference between the current and previous meter readings is 151 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "step_1",
+              "operation": "difference",
+              "operands": [
+                "current_reading",
+                "previous_reading"
+              ],
+              "operand_values": [
+                "8970",
+                "8819"
+              ],
+              "exact_result": "151",
+              "formatted_result": "151",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "current_reading",
+              "section": "electricity_used",
+              "printed_text": "8970"
+            },
+            {
+              "id": "previous_reading",
+              "section": "electricity_used",
+              "printed_text": "8819"
+            }
+          ]
+        },
+        "practice_11": {
+          "answer": "The printed arrears amount is -0.53 PKR.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "step_1",
+              "operation": "identity",
+              "operands": [
+                "arrears"
+              ],
+              "operand_values": [
+                "-0.53"
+              ],
+              "exact_result": "-0.53",
+              "formatted_result": "-0.53",
+              "unit": "PKR"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "arrears",
+              "section": "bill_calculation",
+              "printed_text": "-0.53"
+            }
+          ]
+        },
+        "practice_12": {
+          "answer": "The bill due date is 2026-04-21.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "step_1",
+              "operation": "identity",
+              "operands": [
+                "due_date"
+              ],
+              "operand_values": [
+                "2026-04-21"
+              ],
+              "exact_result": "2026-04-21",
+              "formatted_result": "2026-04-21",
+              "unit": "date"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "due_date",
+              "section": "header",
+              "printed_text": "21st Apr 2026"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "bill_id": "KESC_0004",
+      "warnings": [
+        "net-metering: multiple registers; do not subtract arbitrary rows",
+        "payable_within_due_date: balance relationship needs review"
+      ],
+      "answers": {
+        "practice_01": {
+          "answer": "Taxes account for 16.4% of the current bill. Assumption: The total taxes are calculated as the sum of electricity duty and GST.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "tax_pct",
+              "operation": "percentage",
+              "operands": [
+                "total_taxes",
+                "current_bill"
+              ],
+              "operand_values": [
+                "7472.24",
+                "45570.25"
+              ],
+              "exact_result": "16.39718895551373977540171493",
+              "formatted_result": "16.4",
+              "unit": "%"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "current_bill",
+              "section": "bill_calculation",
+              "printed_text": "45,570.25"
+            },
+            {
+              "id": "total_taxes",
+              "section": "bill_calculation",
+              "printed_text": "7,472.24"
+            }
+          ]
+        },
+        "practice_02": {
+          "answer": "The difference between the after-due and within-due amounts is 0 PKR.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "diff",
+              "operation": "difference",
+              "operands": [
+                "payable_after_due_date",
+                "payable_within_due_date"
+              ],
+              "operand_values": [
+                "0",
+                "0"
+              ],
+              "exact_result": "0",
+              "formatted_result": "0",
+              "unit": "PKR"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "payable_after_due_date",
+              "section": "amount_due",
+              "printed_text": "0"
+            },
+            {
+              "id": "payable_within_due_date",
+              "section": "amount_due",
+              "printed_text": "0"
+            }
+          ]
+        },
+        "practice_03": {
+          "answer": "The month with the highest units is 2025-06.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "max_units",
+              "operation": "maximum",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units",
+                "history_cell_12_units"
+              ],
+              "operand_values": [
+                "943",
+                "637",
+                "665",
+                "555",
+                "522",
+                "143",
+                "121",
+                "114",
+                "131",
+                "187",
+                "298",
+                "599",
+                "901"
+              ],
+              "exact_result": "943",
+              "formatted_result": "943",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "usage_chart",
+              "printed_text": "943"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "usage_chart",
+              "printed_text": "298"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "usage_chart",
+              "printed_text": "599"
+            },
+            {
+              "id": "history_cell_12_units",
+              "section": "usage_chart",
+              "printed_text": "901"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "usage_chart",
+              "printed_text": "637"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "usage_chart",
+              "printed_text": "665"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "usage_chart",
+              "printed_text": "555"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "usage_chart",
+              "printed_text": "522"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "usage_chart",
+              "printed_text": "143"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "usage_chart",
+              "printed_text": "121"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "usage_chart",
+              "printed_text": "114"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "usage_chart",
+              "printed_text": "131"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "usage_chart",
+              "printed_text": "187"
+            }
+          ]
+        },
+        "practice_04": {
+          "answer": "The month with the lowest units is 2026-01.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "min_units",
+              "operation": "minimum",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units",
+                "history_cell_12_units"
+              ],
+              "operand_values": [
+                "943",
+                "637",
+                "665",
+                "555",
+                "522",
+                "143",
+                "121",
+                "114",
+                "131",
+                "187",
+                "298",
+                "599",
+                "901"
+              ],
+              "exact_result": "114",
+              "formatted_result": "114",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "usage_chart",
+              "printed_text": "943"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "usage_chart",
+              "printed_text": "298"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "usage_chart",
+              "printed_text": "599"
+            },
+            {
+              "id": "history_cell_12_units",
+              "section": "usage_chart",
+              "printed_text": "901"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "usage_chart",
+              "printed_text": "637"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "usage_chart",
+              "printed_text": "665"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "usage_chart",
+              "printed_text": "555"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "usage_chart",
+              "printed_text": "522"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "usage_chart",
+              "printed_text": "143"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "usage_chart",
+              "printed_text": "121"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "usage_chart",
+              "printed_text": "114"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "usage_chart",
+              "printed_text": "131"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "usage_chart",
+              "printed_text": "187"
+            }
+          ]
+        },
+        "practice_05": {
+          "answer": "The average consumption is 447.38 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "avg_units",
+              "operation": "average",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units",
+                "history_cell_12_units"
+              ],
+              "operand_values": [
+                "943",
+                "637",
+                "665",
+                "555",
+                "522",
+                "143",
+                "121",
+                "114",
+                "131",
+                "187",
+                "298",
+                "599",
+                "901"
+              ],
+              "exact_result": "447.3846153846153846153846154",
+              "formatted_result": "447.38",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "usage_chart",
+              "printed_text": "943"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "usage_chart",
+              "printed_text": "298"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "usage_chart",
+              "printed_text": "599"
+            },
+            {
+              "id": "history_cell_12_units",
+              "section": "usage_chart",
+              "printed_text": "901"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "usage_chart",
+              "printed_text": "637"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "usage_chart",
+              "printed_text": "665"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "usage_chart",
+              "printed_text": "555"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "usage_chart",
+              "printed_text": "522"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "usage_chart",
+              "printed_text": "143"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "usage_chart",
+              "printed_text": "121"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "usage_chart",
+              "printed_text": "114"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "usage_chart",
+              "printed_text": "131"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "usage_chart",
+              "printed_text": "187"
+            }
+          ]
+        },
+        "practice_06": {
+          "answer": "The total consumption is 5816 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "total_units",
+              "operation": "sum",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units",
+                "history_cell_12_units"
+              ],
+              "operand_values": [
+                "943",
+                "637",
+                "665",
+                "555",
+                "522",
+                "143",
+                "121",
+                "114",
+                "131",
+                "187",
+                "298",
+                "599",
+                "901"
+              ],
+              "exact_result": "5816",
+              "formatted_result": "5816",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "usage_chart",
+              "printed_text": "943"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "usage_chart",
+              "printed_text": "298"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "usage_chart",
+              "printed_text": "599"
+            },
+            {
+              "id": "history_cell_12_units",
+              "section": "usage_chart",
+              "printed_text": "901"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "usage_chart",
+              "printed_text": "637"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "usage_chart",
+              "printed_text": "665"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "usage_chart",
+              "printed_text": "555"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "usage_chart",
+              "printed_text": "522"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "usage_chart",
+              "printed_text": "143"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "usage_chart",
+              "printed_text": "121"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "usage_chart",
+              "printed_text": "114"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "usage_chart",
+              "printed_text": "131"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "usage_chart",
+              "printed_text": "187"
+            }
+          ]
+        },
+        "practice_07": {
+          "answer": "8 months had consumption above 200 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "count_above_200",
+              "operation": "count_above",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units",
+                "history_cell_12_units",
+                "200"
+              ],
+              "operand_values": [
+                "943",
+                "637",
+                "665",
+                "555",
+                "522",
+                "143",
+                "121",
+                "114",
+                "131",
+                "187",
+                "298",
+                "599",
+                "901",
+                "200"
+              ],
+              "exact_result": "8",
+              "formatted_result": "8",
+              "unit": "months"
+            }
+          ],
+          "verified_prose_numbers": [
+            "200"
+          ],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "usage_chart",
+              "printed_text": "943"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "usage_chart",
+              "printed_text": "298"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "usage_chart",
+              "printed_text": "599"
+            },
+            {
+              "id": "history_cell_12_units",
+              "section": "usage_chart",
+              "printed_text": "901"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "usage_chart",
+              "printed_text": "637"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "usage_chart",
+              "printed_text": "665"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "usage_chart",
+              "printed_text": "555"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "usage_chart",
+              "printed_text": "522"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "usage_chart",
+              "printed_text": "143"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "usage_chart",
+              "printed_text": "121"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "usage_chart",
+              "printed_text": "114"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "usage_chart",
+              "printed_text": "131"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "usage_chart",
+              "printed_text": "187"
+            }
+          ]
+        },
+        "practice_08": {
+          "answer": "0 months had consumption below 100 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "count_below_100",
+              "operation": "count_below",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units",
+                "history_cell_12_units",
+                "100"
+              ],
+              "operand_values": [
+                "943",
+                "637",
+                "665",
+                "555",
+                "522",
+                "143",
+                "121",
+                "114",
+                "131",
+                "187",
+                "298",
+                "599",
+                "901",
+                "100"
+              ],
+              "exact_result": "0",
+              "formatted_result": "0",
+              "unit": "months"
+            }
+          ],
+          "verified_prose_numbers": [
+            "100"
+          ],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "usage_chart",
+              "printed_text": "943"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "usage_chart",
+              "printed_text": "298"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "usage_chart",
+              "printed_text": "599"
+            },
+            {
+              "id": "history_cell_12_units",
+              "section": "usage_chart",
+              "printed_text": "901"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "usage_chart",
+              "printed_text": "637"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "usage_chart",
+              "printed_text": "665"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "usage_chart",
+              "printed_text": "555"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "usage_chart",
+              "printed_text": "522"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "usage_chart",
+              "printed_text": "143"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "usage_chart",
+              "printed_text": "121"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "usage_chart",
+              "printed_text": "114"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "usage_chart",
+              "printed_text": "131"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "usage_chart",
+              "printed_text": "187"
+            }
+          ]
+        },
+        "practice_09": {
+          "answer": "The average billed amount is 21788.11 PKR.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "avg_billed",
+              "operation": "average",
+              "operands": [
+                "history_cell_13_billed",
+                "history_cell_14_billed",
+                "history_cell_15_billed"
+              ],
+              "operand_values": [
+                "32842.35",
+                "18957.94",
+                "13564.05"
+              ],
+              "exact_result": "21788.11333333333333333333333",
+              "formatted_result": "21788.11",
+              "unit": "PKR"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_13_billed",
+              "section": "payment_history",
+              "printed_text": "32,842.35"
+            },
+            {
+              "id": "history_cell_14_billed",
+              "section": "payment_history",
+              "printed_text": "18,957.94"
+            },
+            {
+              "id": "history_cell_15_billed",
+              "section": "payment_history",
+              "printed_text": "13,564.05"
+            }
+          ]
+        },
+        "practice_10": {
+          "answer": "The bill does not provide enough readable evidence to establish this answer. Missing or ambiguous: previous_reading; current_reading.",
+          "missing": [
+            "previous_reading",
+            "current_reading"
+          ],
+          "calculations": [],
+          "sources": []
+        },
+        "practice_11": {
+          "answer": "The arrears amount is -91877.02 PKR.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "arrears_val",
+              "operation": "identity",
+              "operands": [
+                "arrears"
+              ],
+              "operand_values": [
+                "-91877.02"
+              ],
+              "exact_result": "-91877.02",
+              "formatted_result": "-91877.02",
+              "unit": "PKR"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "arrears",
+              "section": "bill_calculation",
+              "printed_text": "-91,877.02"
+            }
+          ]
+        },
+        "practice_12": {
+          "answer": "The bill due date is 2026-07-13.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "due",
+              "operation": "identity",
+              "operands": [
+                "due_date"
+              ],
+              "operand_values": [
+                "2026-07-13"
+              ],
+              "exact_result": "2026-07-13",
+              "formatted_result": "2026-07-13",
+              "unit": "date"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "due_date",
+              "section": "due_date",
+              "printed_text": "13th Jul 2026"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "bill_id": "IESCO_0004",
+      "warnings": [
+        "charge_1: line amount conflicts with evidence",
+        "charge_1: uncertain source fact",
+        "current_bill: differs from charges plus taxes; inspect adjustments",
+        "payable_within_due_date: balance relationship needs review",
+        "total_charges: printed total differs from line sum; retain printed values"
+      ],
+      "answers": {
+        "practice_01": {
+          "answer": "Taxes account for 15.24% of the current bill.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "percentage_taxes",
+              "operation": "percentage",
+              "operands": [
+                "total_taxes",
+                "current_bill"
+              ],
+              "operand_values": [
+                "498",
+                "3267"
+              ],
+              "exact_result": "15.24334251606978879706152433",
+              "formatted_result": "15.24",
+              "unit": "%"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "current_bill",
+              "section": "bill_charges_breakdown",
+              "printed_text": "3267"
+            },
+            {
+              "id": "total_taxes",
+              "section": "bill_charges_breakdown",
+              "printed_text": "498"
+            }
+          ]
+        },
+        "practice_02": {
+          "answer": "The difference between the after-due and within-due amounts is 277 PKR.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "diff_due",
+              "operation": "difference",
+              "operands": [
+                "payable_after_due_date",
+                "payable_within_due_date"
+              ],
+              "operand_values": [
+                "3812",
+                "3535"
+              ],
+              "exact_result": "277",
+              "formatted_result": "277",
+              "unit": "PKR"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "payable_after_due_date",
+              "section": "header",
+              "printed_text": "3812"
+            },
+            {
+              "id": "payable_within_due_date",
+              "section": "header",
+              "printed_text": "3535"
+            }
+          ]
+        },
+        "practice_03": {
+          "answer": "The highest consumption in the historical period was 197 kWh. Month(s): 2026-06.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "max_units",
+              "operation": "maximum",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units"
+              ],
+              "operand_values": [
+                "20",
+                "163",
+                "148",
+                "102",
+                "105",
+                "116",
+                "104",
+                "133",
+                "176",
+                "197",
+                "110",
+                "47"
+              ],
+              "exact_result": "197",
+              "formatted_result": "197",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "bill_history",
+              "printed_text": "20"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "bill_history",
+              "printed_text": "110"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "bill_history",
+              "printed_text": "47"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "bill_history",
+              "printed_text": "163"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "bill_history",
+              "printed_text": "148"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "bill_history",
+              "printed_text": "102"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "bill_history",
+              "printed_text": "105"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "bill_history",
+              "printed_text": "116"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "bill_history",
+              "printed_text": "104"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "bill_history",
+              "printed_text": "133"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "bill_history",
+              "printed_text": "176"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "bill_history",
+              "printed_text": "197"
+            }
+          ]
+        },
+        "practice_04": {
+          "answer": "The lowest consumption in the historical period was 20 kWh. Month(s): 2025-09.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "min_units",
+              "operation": "minimum",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units"
+              ],
+              "operand_values": [
+                "20",
+                "163",
+                "148",
+                "102",
+                "105",
+                "116",
+                "104",
+                "133",
+                "176",
+                "197",
+                "110",
+                "47"
+              ],
+              "exact_result": "20",
+              "formatted_result": "20",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "bill_history",
+              "printed_text": "20"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "bill_history",
+              "printed_text": "110"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "bill_history",
+              "printed_text": "47"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "bill_history",
+              "printed_text": "163"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "bill_history",
+              "printed_text": "148"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "bill_history",
+              "printed_text": "102"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "bill_history",
+              "printed_text": "105"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "bill_history",
+              "printed_text": "116"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "bill_history",
+              "printed_text": "104"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "bill_history",
+              "printed_text": "133"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "bill_history",
+              "printed_text": "176"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "bill_history",
+              "printed_text": "197"
+            }
+          ]
+        },
+        "practice_05": {
+          "answer": "The average consumption across the historical period was 118.42 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "avg_units",
+              "operation": "average",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units"
+              ],
+              "operand_values": [
+                "20",
+                "163",
+                "148",
+                "102",
+                "105",
+                "116",
+                "104",
+                "133",
+                "176",
+                "197",
+                "110",
+                "47"
+              ],
+              "exact_result": "118.4166666666666666666666667",
+              "formatted_result": "118.42",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "bill_history",
+              "printed_text": "20"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "bill_history",
+              "printed_text": "110"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "bill_history",
+              "printed_text": "47"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "bill_history",
+              "printed_text": "163"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "bill_history",
+              "printed_text": "148"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "bill_history",
+              "printed_text": "102"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "bill_history",
+              "printed_text": "105"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "bill_history",
+              "printed_text": "116"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "bill_history",
+              "printed_text": "104"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "bill_history",
+              "printed_text": "133"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "bill_history",
+              "printed_text": "176"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "bill_history",
+              "printed_text": "197"
+            }
+          ]
+        },
+        "practice_06": {
+          "answer": "The total consumption across the historical period was 1421 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "total_units",
+              "operation": "sum",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units"
+              ],
+              "operand_values": [
+                "20",
+                "163",
+                "148",
+                "102",
+                "105",
+                "116",
+                "104",
+                "133",
+                "176",
+                "197",
+                "110",
+                "47"
+              ],
+              "exact_result": "1421",
+              "formatted_result": "1421",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "bill_history",
+              "printed_text": "20"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "bill_history",
+              "printed_text": "110"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "bill_history",
+              "printed_text": "47"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "bill_history",
+              "printed_text": "163"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "bill_history",
+              "printed_text": "148"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "bill_history",
+              "printed_text": "102"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "bill_history",
+              "printed_text": "105"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "bill_history",
+              "printed_text": "116"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "bill_history",
+              "printed_text": "104"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "bill_history",
+              "printed_text": "133"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "bill_history",
+              "printed_text": "176"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "bill_history",
+              "printed_text": "197"
+            }
+          ]
+        },
+        "practice_07": {
+          "answer": "There are 0 months with consumption above 200 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "count_above_200",
+              "operation": "count_above",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units",
+                "200"
+              ],
+              "operand_values": [
+                "20",
+                "163",
+                "148",
+                "102",
+                "105",
+                "116",
+                "104",
+                "133",
+                "176",
+                "197",
+                "110",
+                "47",
+                "200"
+              ],
+              "exact_result": "0",
+              "formatted_result": "0",
+              "unit": "months"
+            }
+          ],
+          "verified_prose_numbers": [
+            "200"
+          ],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "bill_history",
+              "printed_text": "20"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "bill_history",
+              "printed_text": "110"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "bill_history",
+              "printed_text": "47"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "bill_history",
+              "printed_text": "163"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "bill_history",
+              "printed_text": "148"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "bill_history",
+              "printed_text": "102"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "bill_history",
+              "printed_text": "105"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "bill_history",
+              "printed_text": "116"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "bill_history",
+              "printed_text": "104"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "bill_history",
+              "printed_text": "133"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "bill_history",
+              "printed_text": "176"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "bill_history",
+              "printed_text": "197"
+            }
+          ]
+        },
+        "practice_08": {
+          "answer": "There are 2 months with consumption below 100 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "count_below_100",
+              "operation": "count_below",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units",
+                "100"
+              ],
+              "operand_values": [
+                "20",
+                "163",
+                "148",
+                "102",
+                "105",
+                "116",
+                "104",
+                "133",
+                "176",
+                "197",
+                "110",
+                "47",
+                "100"
+              ],
+              "exact_result": "2",
+              "formatted_result": "2",
+              "unit": "months"
+            }
+          ],
+          "verified_prose_numbers": [
+            "100"
+          ],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "bill_history",
+              "printed_text": "20"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "bill_history",
+              "printed_text": "110"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "bill_history",
+              "printed_text": "47"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "bill_history",
+              "printed_text": "163"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "bill_history",
+              "printed_text": "148"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "bill_history",
+              "printed_text": "102"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "bill_history",
+              "printed_text": "105"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "bill_history",
+              "printed_text": "116"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "bill_history",
+              "printed_text": "104"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "bill_history",
+              "printed_text": "133"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "bill_history",
+              "printed_text": "176"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "bill_history",
+              "printed_text": "197"
+            }
+          ]
+        },
+        "practice_09": {
+          "answer": "The average billed amount across the historical period was 1915.92 PKR.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "avg_billed",
+              "operation": "average",
+              "operands": [
+                "history_cell_0_billed",
+                "history_cell_1_billed",
+                "history_cell_2_billed",
+                "history_cell_3_billed",
+                "history_cell_4_billed",
+                "history_cell_5_billed",
+                "history_cell_6_billed",
+                "history_cell_7_billed",
+                "history_cell_8_billed",
+                "history_cell_9_billed",
+                "history_cell_10_billed",
+                "history_cell_11_billed"
+              ],
+              "operand_values": [
+                "215",
+                "1930",
+                "1971",
+                "1357",
+                "1415",
+                "2016",
+                "2665",
+                "3130",
+                "3634",
+                "894",
+                "566",
+                "3198"
+              ],
+              "exact_result": "1915.916666666666666666666667",
+              "formatted_result": "1915.92",
+              "unit": "PKR"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_billed",
+              "section": "bill_history",
+              "printed_text": "215"
+            },
+            {
+              "id": "history_cell_10_billed",
+              "section": "bill_history",
+              "printed_text": "566"
+            },
+            {
+              "id": "history_cell_11_billed",
+              "section": "bill_history",
+              "printed_text": "3198"
+            },
+            {
+              "id": "history_cell_1_billed",
+              "section": "bill_history",
+              "printed_text": "1930"
+            },
+            {
+              "id": "history_cell_2_billed",
+              "section": "bill_history",
+              "printed_text": "1971"
+            },
+            {
+              "id": "history_cell_3_billed",
+              "section": "bill_history",
+              "printed_text": "1357"
+            },
+            {
+              "id": "history_cell_4_billed",
+              "section": "bill_history",
+              "printed_text": "1415"
+            },
+            {
+              "id": "history_cell_5_billed",
+              "section": "bill_history",
+              "printed_text": "2016"
+            },
+            {
+              "id": "history_cell_6_billed",
+              "section": "bill_history",
+              "printed_text": "2665"
+            },
+            {
+              "id": "history_cell_7_billed",
+              "section": "bill_history",
+              "printed_text": "3130"
+            },
+            {
+              "id": "history_cell_8_billed",
+              "section": "bill_history",
+              "printed_text": "3634"
+            },
+            {
+              "id": "history_cell_9_billed",
+              "section": "bill_history",
+              "printed_text": "894"
+            }
+          ]
+        },
+        "practice_10": {
+          "answer": "The difference between the current and previous meter readings is 158 units.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "diff_reading",
+              "operation": "difference",
+              "operands": [
+                "current_reading",
+                "previous_reading"
+              ],
+              "operand_values": [
+                "9459",
+                "9301"
+              ],
+              "exact_result": "158",
+              "formatted_result": "158",
+              "unit": "units"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "current_reading",
+              "section": "meter_info",
+              "printed_text": "9459"
+            },
+            {
+              "id": "previous_reading",
+              "section": "meter_info",
+              "printed_text": "9301"
+            }
+          ]
+        },
+        "practice_11": {
+          "answer": "The printed arrears amount is 0 PKR.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "arrears_val",
+              "operation": "identity",
+              "operands": [
+                "arrears"
+              ],
+              "operand_values": [
+                "0"
+              ],
+              "exact_result": "0",
+              "formatted_result": "0",
+              "unit": "PKR"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "arrears",
+              "section": "bill_charges_breakdown",
+              "printed_text": "0"
+            }
+          ]
+        },
+        "practice_12": {
+          "answer": "The bill due date is 2026-10-08.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "due_date_val",
+              "operation": "identity",
+              "operands": [
+                "due_date"
+              ],
+              "operand_values": [
+                "2026-10-08"
+              ],
+              "exact_result": "2026-10-08",
+              "formatted_result": "2026-10-08",
+              "unit": "date"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "due_date",
+              "section": "header",
+              "printed_text": "08 OCT 26"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "bill_id": "LESCO_0005",
+      "warnings": [
+        "net-metering: multiple registers; do not subtract arbitrary rows",
+        "units_consumed: missing expected field"
+      ],
+      "answers": {
+        "practice_01": {
+          "answer": "Taxes account for 16.2% of the current bill.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "tax_percentage",
+              "operation": "percentage",
+              "operands": [
+                "total_taxes",
+                "current_bill"
+              ],
+              "operand_values": [
+                "3358.23",
+                "20726"
+              ],
+              "exact_result": "16.20298176203801987841358680",
+              "formatted_result": "16.2",
+              "unit": "%"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "current_bill",
+              "section": "bill_charges_breakdown",
+              "printed_text": "20726"
+            },
+            {
+              "id": "total_taxes",
+              "section": "bill_charges_breakdown",
+              "printed_text": "3,358.23"
+            }
+          ]
+        },
+        "practice_02": {
+          "answer": "The bill does not provide enough readable evidence to establish this answer. Missing or ambiguous: payable_after_due_date.",
+          "missing": [
+            "payable_after_due_date"
+          ],
+          "calculations": [],
+          "sources": []
+        },
+        "practice_03": {
+          "answer": "The month with the highest units is 2025-07 with 781 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "max_units",
+              "operation": "maximum",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units"
+              ],
+              "operand_values": [
+                "781",
+                "225",
+                "-142",
+                "-176",
+                "-440",
+                "-162",
+                "359",
+                "-809",
+                "-818",
+                "-402",
+                "-1955",
+                "-152"
+              ],
+              "exact_result": "781",
+              "formatted_result": "781",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "bill_history",
+              "printed_text": "781"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "bill_history",
+              "printed_text": "-1955"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "bill_history",
+              "printed_text": "-152"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "bill_history",
+              "printed_text": "225"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "bill_history",
+              "printed_text": "-142"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "bill_history",
+              "printed_text": "-176"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "bill_history",
+              "printed_text": "-440"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "bill_history",
+              "printed_text": "-162"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "bill_history",
+              "printed_text": "359"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "bill_history",
+              "printed_text": "-809"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "bill_history",
+              "printed_text": "-818"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "bill_history",
+              "printed_text": "-402"
+            }
+          ]
+        },
+        "practice_04": {
+          "answer": "The month with the lowest units is 2026-05 with -1955 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "min_units",
+              "operation": "minimum",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units"
+              ],
+              "operand_values": [
+                "781",
+                "225",
+                "-142",
+                "-176",
+                "-440",
+                "-162",
+                "359",
+                "-809",
+                "-818",
+                "-402",
+                "-1955",
+                "-152"
+              ],
+              "exact_result": "-1955",
+              "formatted_result": "-1955",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "bill_history",
+              "printed_text": "781"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "bill_history",
+              "printed_text": "-1955"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "bill_history",
+              "printed_text": "-152"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "bill_history",
+              "printed_text": "225"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "bill_history",
+              "printed_text": "-142"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "bill_history",
+              "printed_text": "-176"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "bill_history",
+              "printed_text": "-440"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "bill_history",
+              "printed_text": "-162"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "bill_history",
+              "printed_text": "359"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "bill_history",
+              "printed_text": "-809"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "bill_history",
+              "printed_text": "-818"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "bill_history",
+              "printed_text": "-402"
+            }
+          ]
+        },
+        "practice_05": {
+          "answer": "The average consumption across the historical period is -307.58 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "avg_consumption",
+              "operation": "average",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units"
+              ],
+              "operand_values": [
+                "781",
+                "225",
+                "-142",
+                "-176",
+                "-440",
+                "-162",
+                "359",
+                "-809",
+                "-818",
+                "-402",
+                "-1955",
+                "-152"
+              ],
+              "exact_result": "-307.5833333333333333333333333",
+              "formatted_result": "-307.58",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "bill_history",
+              "printed_text": "781"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "bill_history",
+              "printed_text": "-1955"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "bill_history",
+              "printed_text": "-152"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "bill_history",
+              "printed_text": "225"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "bill_history",
+              "printed_text": "-142"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "bill_history",
+              "printed_text": "-176"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "bill_history",
+              "printed_text": "-440"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "bill_history",
+              "printed_text": "-162"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "bill_history",
+              "printed_text": "359"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "bill_history",
+              "printed_text": "-809"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "bill_history",
+              "printed_text": "-818"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "bill_history",
+              "printed_text": "-402"
+            }
+          ]
+        },
+        "practice_06": {
+          "answer": "The total consumption across the historical period is -3691 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "total_consumption",
+              "operation": "sum",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units"
+              ],
+              "operand_values": [
+                "781",
+                "225",
+                "-142",
+                "-176",
+                "-440",
+                "-162",
+                "359",
+                "-809",
+                "-818",
+                "-402",
+                "-1955",
+                "-152"
+              ],
+              "exact_result": "-3691",
+              "formatted_result": "-3691",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "bill_history",
+              "printed_text": "781"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "bill_history",
+              "printed_text": "-1955"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "bill_history",
+              "printed_text": "-152"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "bill_history",
+              "printed_text": "225"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "bill_history",
+              "printed_text": "-142"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "bill_history",
+              "printed_text": "-176"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "bill_history",
+              "printed_text": "-440"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "bill_history",
+              "printed_text": "-162"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "bill_history",
+              "printed_text": "359"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "bill_history",
+              "printed_text": "-809"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "bill_history",
+              "printed_text": "-818"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "bill_history",
+              "printed_text": "-402"
+            }
+          ]
+        },
+        "practice_07": {
+          "answer": "There are 3 months with consumption above 200 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "count_above_200",
+              "operation": "count_above",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units",
+                "200"
+              ],
+              "operand_values": [
+                "781",
+                "225",
+                "-142",
+                "-176",
+                "-440",
+                "-162",
+                "359",
+                "-809",
+                "-818",
+                "-402",
+                "-1955",
+                "-152",
+                "200"
+              ],
+              "exact_result": "3",
+              "formatted_result": "3",
+              "unit": "months"
+            }
+          ],
+          "verified_prose_numbers": [
+            "200"
+          ],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "bill_history",
+              "printed_text": "781"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "bill_history",
+              "printed_text": "-1955"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "bill_history",
+              "printed_text": "-152"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "bill_history",
+              "printed_text": "225"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "bill_history",
+              "printed_text": "-142"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "bill_history",
+              "printed_text": "-176"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "bill_history",
+              "printed_text": "-440"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "bill_history",
+              "printed_text": "-162"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "bill_history",
+              "printed_text": "359"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "bill_history",
+              "printed_text": "-809"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "bill_history",
+              "printed_text": "-818"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "bill_history",
+              "printed_text": "-402"
+            }
+          ]
+        },
+        "practice_08": {
+          "answer": "There are 9 months with consumption below 100 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "count_below_100",
+              "operation": "count_below",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units",
+                "100"
+              ],
+              "operand_values": [
+                "781",
+                "225",
+                "-142",
+                "-176",
+                "-440",
+                "-162",
+                "359",
+                "-809",
+                "-818",
+                "-402",
+                "-1955",
+                "-152",
+                "100"
+              ],
+              "exact_result": "9",
+              "formatted_result": "9",
+              "unit": "months"
+            }
+          ],
+          "verified_prose_numbers": [
+            "100"
+          ],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "bill_history",
+              "printed_text": "781"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "bill_history",
+              "printed_text": "-1955"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "bill_history",
+              "printed_text": "-152"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "bill_history",
+              "printed_text": "225"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "bill_history",
+              "printed_text": "-142"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "bill_history",
+              "printed_text": "-176"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "bill_history",
+              "printed_text": "-440"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "bill_history",
+              "printed_text": "-162"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "bill_history",
+              "printed_text": "359"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "bill_history",
+              "printed_text": "-809"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "bill_history",
+              "printed_text": "-818"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "bill_history",
+              "printed_text": "-402"
+            }
+          ]
+        },
+        "practice_09": {
+          "answer": "The average billed amount across the historical period is -22672.33 PKR.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "avg_billed",
+              "operation": "average",
+              "operands": [
+                "history_cell_0_billed",
+                "history_cell_1_billed",
+                "history_cell_2_billed",
+                "history_cell_3_billed",
+                "history_cell_4_billed",
+                "history_cell_5_billed",
+                "history_cell_6_billed",
+                "history_cell_7_billed",
+                "history_cell_8_billed",
+                "history_cell_9_billed",
+                "history_cell_10_billed",
+                "history_cell_11_billed"
+              ],
+              "operand_values": [
+                "35552",
+                "-21364",
+                "-22475",
+                "-21274",
+                "-20094",
+                "-29501",
+                "-8052",
+                "-6686",
+                "-38209",
+                "-34226",
+                "-30243",
+                "-75496"
+              ],
+              "exact_result": "-22672.33333333333333333333333",
+              "formatted_result": "-22672.33",
+              "unit": "PKR"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_billed",
+              "section": "bill_history",
+              "printed_text": "35,552"
+            },
+            {
+              "id": "history_cell_10_billed",
+              "section": "bill_history",
+              "printed_text": "-30,243"
+            },
+            {
+              "id": "history_cell_11_billed",
+              "section": "bill_history",
+              "printed_text": "-75,496"
+            },
+            {
+              "id": "history_cell_1_billed",
+              "section": "bill_history",
+              "printed_text": "-21,364"
+            },
+            {
+              "id": "history_cell_2_billed",
+              "section": "bill_history",
+              "printed_text": "-22,475"
+            },
+            {
+              "id": "history_cell_3_billed",
+              "section": "bill_history",
+              "printed_text": "-21,274"
+            },
+            {
+              "id": "history_cell_4_billed",
+              "section": "bill_history",
+              "printed_text": "-20,094"
+            },
+            {
+              "id": "history_cell_5_billed",
+              "section": "bill_history",
+              "printed_text": "-29,501"
+            },
+            {
+              "id": "history_cell_6_billed",
+              "section": "bill_history",
+              "printed_text": "-8,052"
+            },
+            {
+              "id": "history_cell_7_billed",
+              "section": "bill_history",
+              "printed_text": "-6,686"
+            },
+            {
+              "id": "history_cell_8_billed",
+              "section": "bill_history",
+              "printed_text": "-38,209"
+            },
+            {
+              "id": "history_cell_9_billed",
+              "section": "bill_history",
+              "printed_text": "-34,226"
+            }
+          ]
+        },
+        "practice_10": {
+          "answer": "The bill does not provide enough readable evidence to establish this answer. Missing or ambiguous: previous_reading; current_reading.",
+          "missing": [
+            "previous_reading",
+            "current_reading"
+          ],
+          "calculations": [],
+          "sources": []
+        },
+        "practice_11": {
+          "answer": "The printed arrears amount is -75496 PKR.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "arrears_val",
+              "operation": "identity",
+              "operands": [
+                "arrears"
+              ],
+              "operand_values": [
+                "-75496"
+              ],
+              "exact_result": "-75496",
+              "formatted_result": "-75496",
+              "unit": "PKR"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "arrears",
+              "section": "bill_charges_breakdown",
+              "printed_text": "-75496"
+            }
+          ]
+        },
+        "practice_12": {
+          "answer": "The bill due date is 2026-07-30.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "due_date_val",
+              "operation": "identity",
+              "operands": [
+                "due_date"
+              ],
+              "operand_values": [
+                "2026-07-30"
+              ],
+              "exact_result": "2026-07-30",
+              "formatted_result": "2026-07-30",
+              "unit": "date"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "due_date",
+              "section": "header",
+              "printed_text": "30 JUL 26"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "bill_id": "LESCO_0006",
+      "warnings": [],
+      "answers": {
+        "practice_01": {
+          "answer": "Taxes account for 31.33% of the current bill.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "tax_percentage",
+              "operation": "percentage",
+              "operands": [
+                "total_taxes",
+                "current_bill"
+              ],
+              "operand_values": [
+                "1723.51",
+                "5501"
+              ],
+              "exact_result": "31.33084893655698963824759135",
+              "formatted_result": "31.33",
+              "unit": "%"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "current_bill",
+              "section": "bill charges breakdown",
+              "printed_text": "5501"
+            },
+            {
+              "id": "total_taxes",
+              "section": "bill charges breakdown",
+              "printed_text": "1,723.51"
+            }
+          ]
+        },
+        "practice_02": {
+          "answer": "The after-due amount is 351 rs higher than the within-due amount.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "extra_amount",
+              "operation": "difference",
+              "operands": [
+                "payable_after_due_date",
+                "payable_within_due_date"
+              ],
+              "operand_values": [
+                "45263",
+                "44912"
+              ],
+              "exact_result": "351",
+              "formatted_result": "351",
+              "unit": "rs"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "payable_after_due_date",
+              "section": "header",
+              "printed_text": "45263"
+            },
+            {
+              "id": "payable_within_due_date",
+              "section": "header",
+              "printed_text": "44912"
+            }
+          ]
+        },
+        "practice_03": {
+          "answer": "The month with the highest units is 2025-08.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "max_units",
+              "operation": "maximum",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units"
+              ],
+              "operand_values": [
+                "440",
+                "407",
+                "243",
+                "166",
+                "206",
+                "124",
+                "187",
+                "257",
+                "264",
+                "434",
+                "350",
+                "225"
+              ],
+              "exact_result": "440",
+              "formatted_result": "440",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "bill history",
+              "printed_text": "440"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "bill history",
+              "printed_text": "350"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "bill history",
+              "printed_text": "225"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "bill history",
+              "printed_text": "407"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "bill history",
+              "printed_text": "243"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "bill history",
+              "printed_text": "166"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "bill history",
+              "printed_text": "206"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "bill history",
+              "printed_text": "124"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "bill history",
+              "printed_text": "187"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "bill history",
+              "printed_text": "257"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "bill history",
+              "printed_text": "264"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "bill history",
+              "printed_text": "434"
+            }
+          ]
+        },
+        "practice_04": {
+          "answer": "The month with the lowest units is 2026-01.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "min_units",
+              "operation": "minimum",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units"
+              ],
+              "operand_values": [
+                "440",
+                "407",
+                "243",
+                "166",
+                "206",
+                "124",
+                "187",
+                "257",
+                "264",
+                "434",
+                "350",
+                "225"
+              ],
+              "exact_result": "124",
+              "formatted_result": "124",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "bill history",
+              "printed_text": "440"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "bill history",
+              "printed_text": "350"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "bill history",
+              "printed_text": "225"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "bill history",
+              "printed_text": "407"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "bill history",
+              "printed_text": "243"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "bill history",
+              "printed_text": "166"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "bill history",
+              "printed_text": "206"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "bill history",
+              "printed_text": "124"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "bill history",
+              "printed_text": "187"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "bill history",
+              "printed_text": "257"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "bill history",
+              "printed_text": "264"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "bill history",
+              "printed_text": "434"
+            }
+          ]
+        },
+        "practice_05": {
+          "answer": "The average consumption is 275.25 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "avg_consumption",
+              "operation": "average",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units"
+              ],
+              "operand_values": [
+                "440",
+                "407",
+                "243",
+                "166",
+                "206",
+                "124",
+                "187",
+                "257",
+                "264",
+                "434",
+                "350",
+                "225"
+              ],
+              "exact_result": "275.25",
+              "formatted_result": "275.25",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "bill history",
+              "printed_text": "440"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "bill history",
+              "printed_text": "350"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "bill history",
+              "printed_text": "225"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "bill history",
+              "printed_text": "407"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "bill history",
+              "printed_text": "243"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "bill history",
+              "printed_text": "166"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "bill history",
+              "printed_text": "206"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "bill history",
+              "printed_text": "124"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "bill history",
+              "printed_text": "187"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "bill history",
+              "printed_text": "257"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "bill history",
+              "printed_text": "264"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "bill history",
+              "printed_text": "434"
+            }
+          ]
+        },
+        "practice_06": {
+          "answer": "The total consumption is 3303 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "total_consumption",
+              "operation": "sum",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units"
+              ],
+              "operand_values": [
+                "440",
+                "407",
+                "243",
+                "166",
+                "206",
+                "124",
+                "187",
+                "257",
+                "264",
+                "434",
+                "350",
+                "225"
+              ],
+              "exact_result": "3303",
+              "formatted_result": "3303",
+              "unit": "kWh"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "bill history",
+              "printed_text": "440"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "bill history",
+              "printed_text": "350"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "bill history",
+              "printed_text": "225"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "bill history",
+              "printed_text": "407"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "bill history",
+              "printed_text": "243"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "bill history",
+              "printed_text": "166"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "bill history",
+              "printed_text": "206"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "bill history",
+              "printed_text": "124"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "bill history",
+              "printed_text": "187"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "bill history",
+              "printed_text": "257"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "bill history",
+              "printed_text": "264"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "bill history",
+              "printed_text": "434"
+            }
+          ]
+        },
+        "practice_07": {
+          "answer": "9 months had consumption above 200 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "count_above_200",
+              "operation": "count_above",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units",
+                "200"
+              ],
+              "operand_values": [
+                "440",
+                "407",
+                "243",
+                "166",
+                "206",
+                "124",
+                "187",
+                "257",
+                "264",
+                "434",
+                "350",
+                "225",
+                "200"
+              ],
+              "exact_result": "9",
+              "formatted_result": "9",
+              "unit": "months"
+            }
+          ],
+          "verified_prose_numbers": [
+            "200"
+          ],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "bill history",
+              "printed_text": "440"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "bill history",
+              "printed_text": "350"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "bill history",
+              "printed_text": "225"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "bill history",
+              "printed_text": "407"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "bill history",
+              "printed_text": "243"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "bill history",
+              "printed_text": "166"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "bill history",
+              "printed_text": "206"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "bill history",
+              "printed_text": "124"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "bill history",
+              "printed_text": "187"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "bill history",
+              "printed_text": "257"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "bill history",
+              "printed_text": "264"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "bill history",
+              "printed_text": "434"
+            }
+          ]
+        },
+        "practice_08": {
+          "answer": "0 months had consumption below 100 kWh.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "count_below_100",
+              "operation": "count_below",
+              "operands": [
+                "history_cell_0_units",
+                "history_cell_1_units",
+                "history_cell_2_units",
+                "history_cell_3_units",
+                "history_cell_4_units",
+                "history_cell_5_units",
+                "history_cell_6_units",
+                "history_cell_7_units",
+                "history_cell_8_units",
+                "history_cell_9_units",
+                "history_cell_10_units",
+                "history_cell_11_units",
+                "100"
+              ],
+              "operand_values": [
+                "440",
+                "407",
+                "243",
+                "166",
+                "206",
+                "124",
+                "187",
+                "257",
+                "264",
+                "434",
+                "350",
+                "225",
+                "100"
+              ],
+              "exact_result": "0",
+              "formatted_result": "0",
+              "unit": "months"
+            }
+          ],
+          "verified_prose_numbers": [
+            "100"
+          ],
+          "sources": [
+            {
+              "id": "history_cell_0_units",
+              "section": "bill history",
+              "printed_text": "440"
+            },
+            {
+              "id": "history_cell_10_units",
+              "section": "bill history",
+              "printed_text": "350"
+            },
+            {
+              "id": "history_cell_11_units",
+              "section": "bill history",
+              "printed_text": "225"
+            },
+            {
+              "id": "history_cell_1_units",
+              "section": "bill history",
+              "printed_text": "407"
+            },
+            {
+              "id": "history_cell_2_units",
+              "section": "bill history",
+              "printed_text": "243"
+            },
+            {
+              "id": "history_cell_3_units",
+              "section": "bill history",
+              "printed_text": "166"
+            },
+            {
+              "id": "history_cell_4_units",
+              "section": "bill history",
+              "printed_text": "206"
+            },
+            {
+              "id": "history_cell_5_units",
+              "section": "bill history",
+              "printed_text": "124"
+            },
+            {
+              "id": "history_cell_6_units",
+              "section": "bill history",
+              "printed_text": "187"
+            },
+            {
+              "id": "history_cell_7_units",
+              "section": "bill history",
+              "printed_text": "257"
+            },
+            {
+              "id": "history_cell_8_units",
+              "section": "bill history",
+              "printed_text": "264"
+            },
+            {
+              "id": "history_cell_9_units",
+              "section": "bill history",
+              "printed_text": "434"
+            }
+          ]
+        },
+        "practice_09": {
+          "answer": "The average billed amount is 27222.08 PKR.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "avg_billed",
+              "operation": "average",
+              "operands": [
+                "history_cell_0_billed",
+                "history_cell_1_billed",
+                "history_cell_2_billed",
+                "history_cell_3_billed",
+                "history_cell_4_billed",
+                "history_cell_5_billed",
+                "history_cell_6_billed",
+                "history_cell_7_billed",
+                "history_cell_8_billed",
+                "history_cell_9_billed",
+                "history_cell_10_billed",
+                "history_cell_11_billed"
+              ],
+              "operand_values": [
+                "52906",
+                "23954",
+                "15558",
+                "27502",
+                "13486",
+                "23089",
+                "12775",
+                "31115",
+                "17999",
+                "47317",
+                "22523",
+                "38441"
+              ],
+              "exact_result": "27222.08333333333333333333333",
+              "formatted_result": "27222.08",
+              "unit": "PKR"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "history_cell_0_billed",
+              "section": "bill history",
+              "printed_text": "52,906"
+            },
+            {
+              "id": "history_cell_10_billed",
+              "section": "bill history",
+              "printed_text": "22,523"
+            },
+            {
+              "id": "history_cell_11_billed",
+              "section": "bill history",
+              "printed_text": "38,441"
+            },
+            {
+              "id": "history_cell_1_billed",
+              "section": "bill history",
+              "printed_text": "23,954"
+            },
+            {
+              "id": "history_cell_2_billed",
+              "section": "bill history",
+              "printed_text": "15,558"
+            },
+            {
+              "id": "history_cell_3_billed",
+              "section": "bill history",
+              "printed_text": "27,502"
+            },
+            {
+              "id": "history_cell_4_billed",
+              "section": "bill history",
+              "printed_text": "13,486"
+            },
+            {
+              "id": "history_cell_5_billed",
+              "section": "bill history",
+              "printed_text": "23,089"
+            },
+            {
+              "id": "history_cell_6_billed",
+              "section": "bill history",
+              "printed_text": "12,775"
+            },
+            {
+              "id": "history_cell_7_billed",
+              "section": "bill history",
+              "printed_text": "31,115"
+            },
+            {
+              "id": "history_cell_8_billed",
+              "section": "bill history",
+              "printed_text": "17,999"
+            },
+            {
+              "id": "history_cell_9_billed",
+              "section": "bill history",
+              "printed_text": "47,317"
+            }
+          ]
+        },
+        "practice_10": {
+          "answer": "The difference between the current and previous meter readings is 65 units.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "reading_diff",
+              "operation": "difference",
+              "operands": [
+                "current_reading",
+                "previous_reading"
+              ],
+              "operand_values": [
+                "22303",
+                "22238"
+              ],
+              "exact_result": "65",
+              "formatted_result": "65",
+              "unit": "units"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "current_reading",
+              "section": "meter info",
+              "printed_text": "22303"
+            },
+            {
+              "id": "previous_reading",
+              "section": "meter info",
+              "printed_text": "22238"
+            }
+          ]
+        },
+        "practice_11": {
+          "answer": "The printed arrears amount is 39411.2 PKR.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "arrears_val",
+              "operation": "identity",
+              "operands": [
+                "arrears"
+              ],
+              "operand_values": [
+                "39411.2"
+              ],
+              "exact_result": "39411.2",
+              "formatted_result": "39411.2",
+              "unit": "PKR"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "arrears",
+              "section": "BILL CHARGES BREAKDOWN",
+              "printed_text": "39411 / 2"
+            }
+          ]
+        },
+        "practice_12": {
+          "answer": "The bill due date is 2026-09-09.",
+          "missing": [],
+          "calculations": [
+            {
+              "id": "due_date_val",
+              "operation": "identity",
+              "operands": [
+                "due_date"
+              ],
+              "operand_values": [
+                "2026-09-09"
+              ],
+              "exact_result": "2026-09-09",
+              "formatted_result": "2026-09-09",
+              "unit": "date"
+            }
+          ],
+          "verified_prose_numbers": [],
+          "sources": [
+            {
+              "id": "due_date",
+              "section": "header",
+              "printed_text": "09 SEP 26"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "practice_notice": "PRACTICE ONLY. Unofficial questions and templates; not official scored results.",
+  "runtime": {
+    "extractor": "Extractor",
+    "question_engine": "QuestionEngine",
+    "model": "gemini-3.1-flash-lite"
+  }
+}

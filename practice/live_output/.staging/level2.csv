@@ -1,0 +1,61 @@
+bill_id,question_id,question,answer
+KESC_0008,practice_01,What percentage of the printed current bill consists of taxes?,Taxes account for 16.61% of the current bill.
+KESC_0008,practice_02,How much extra is the highest printed after-due amount compared with the within-due amount?,The difference between the after-due and within-due amounts is 286 PKR.
+KESC_0008,practice_03,Which month has the highest units in the printed historical period?,The highest consumption in the historical period was 239 kWh. Month(s): 2025-07.
+KESC_0008,practice_04,Which month has the lowest units in the printed historical period?,The lowest consumption in the historical period was 88 kWh. Month(s): 2026-02.
+KESC_0008,practice_05,What is the average consumption across the printed historical months?,The average consumption across the historical period was 156 kWh.
+KESC_0008,practice_06,What is the total consumption across the printed historical months?,The total consumption across the historical period was 2028 kWh.
+KESC_0008,practice_07,How many printed historical months have consumption above 200 kWh?,There are 2 months with consumption above 200 kWh.
+KESC_0008,practice_08,How many printed historical months have consumption below 100 kWh?,There are 2 months with consumption below 100 kWh.
+KESC_0008,practice_09,What is the average billed amount across the printed billing history?,The average billed amount across the available billing history is 2713.46 PKR.
+KESC_0008,practice_10,What is the difference between the current and previous meter readings?,The difference between the current and previous meter readings is 151 kWh.
+KESC_0008,practice_11,"What is the printed arrears amount, preserving any credit sign?",The printed arrears amount is -0.53 PKR.
+KESC_0008,practice_12,What is the bill due date?,The bill due date is 2026-04-21.
+KESC_0004,practice_01,What percentage of the printed current bill consists of taxes?,Taxes account for 16.4% of the current bill. Assumption: The total taxes are calculated as the sum of electricity duty and GST.
+KESC_0004,practice_02,How much extra is the highest printed after-due amount compared with the within-due amount?,The difference between the after-due and within-due amounts is 0 PKR.
+KESC_0004,practice_03,Which month has the highest units in the printed historical period?,The month with the highest units is 2025-06.
+KESC_0004,practice_04,Which month has the lowest units in the printed historical period?,The month with the lowest units is 2026-01.
+KESC_0004,practice_05,What is the average consumption across the printed historical months?,The average consumption is 447.38 kWh.
+KESC_0004,practice_06,What is the total consumption across the printed historical months?,The total consumption is 5816 kWh.
+KESC_0004,practice_07,How many printed historical months have consumption above 200 kWh?,8 months had consumption above 200 kWh.
+KESC_0004,practice_08,How many printed historical months have consumption below 100 kWh?,0 months had consumption below 100 kWh.
+KESC_0004,practice_09,What is the average billed amount across the printed billing history?,The average billed amount is 21788.11 PKR.
+KESC_0004,practice_10,What is the difference between the current and previous meter readings?,The bill does not provide enough readable evidence to establish this answer. Missing or ambiguous: previous_reading; current_reading.
+KESC_0004,practice_11,"What is the printed arrears amount, preserving any credit sign?",The arrears amount is -91877.02 PKR.
+KESC_0004,practice_12,What is the bill due date?,The bill due date is 2026-07-13.
+IESCO_0004,practice_01,What percentage of the printed current bill consists of taxes?,Taxes account for 15.24% of the current bill.
+IESCO_0004,practice_02,How much extra is the highest printed after-due amount compared with the within-due amount?,The difference between the after-due and within-due amounts is 277 PKR.
+IESCO_0004,practice_03,Which month has the highest units in the printed historical period?,The highest consumption in the historical period was 197 kWh. Month(s): 2026-06.
+IESCO_0004,practice_04,Which month has the lowest units in the printed historical period?,The lowest consumption in the historical period was 20 kWh. Month(s): 2025-09.
+IESCO_0004,practice_05,What is the average consumption across the printed historical months?,The average consumption across the historical period was 118.42 kWh.
+IESCO_0004,practice_06,What is the total consumption across the printed historical months?,The total consumption across the historical period was 1421 kWh.
+IESCO_0004,practice_07,How many printed historical months have consumption above 200 kWh?,There are 0 months with consumption above 200 kWh.
+IESCO_0004,practice_08,How many printed historical months have consumption below 100 kWh?,There are 2 months with consumption below 100 kWh.
+IESCO_0004,practice_09,What is the average billed amount across the printed billing history?,The average billed amount across the historical period was 1915.92 PKR.
+IESCO_0004,practice_10,What is the difference between the current and previous meter readings?,The difference between the current and previous meter readings is 158 units.
+IESCO_0004,practice_11,"What is the printed arrears amount, preserving any credit sign?",The printed arrears amount is 0 PKR.
+IESCO_0004,practice_12,What is the bill due date?,The bill due date is 2026-10-08.
+LESCO_0005,practice_01,What percentage of the printed current bill consists of taxes?,Taxes account for 16.2% of the current bill.
+LESCO_0005,practice_02,How much extra is the highest printed after-due amount compared with the within-due amount?,The bill does not provide enough readable evidence to establish this answer. Missing or ambiguous: payable_after_due_date.
+LESCO_0005,practice_03,Which month has the highest units in the printed historical period?,The month with the highest units is 2025-07 with 781 kWh.
+LESCO_0005,practice_04,Which month has the lowest units in the printed historical period?,The month with the lowest units is 2026-05 with -1955 kWh.
+LESCO_0005,practice_05,What is the average consumption across the printed historical months?,The average consumption across the historical period is -307.58 kWh.
+LESCO_0005,practice_06,What is the total consumption across the printed historical months?,The total consumption across the historical period is -3691 kWh.
+LESCO_0005,practice_07,How many printed historical months have consumption above 200 kWh?,There are 3 months with consumption above 200 kWh.
+LESCO_0005,practice_08,How many printed historical months have consumption below 100 kWh?,There are 9 months with consumption below 100 kWh.
+LESCO_0005,practice_09,What is the average billed amount across the printed billing history?,The average billed amount across the historical period is -22672.33 PKR.
+LESCO_0005,practice_10,What is the difference between the current and previous meter readings?,The bill does not provide enough readable evidence to establish this answer. Missing or ambiguous: previous_reading; current_reading.
+LESCO_0005,practice_11,"What is the printed arrears amount, preserving any credit sign?",The printed arrears amount is -75496 PKR.
+LESCO_0005,practice_12,What is the bill due date?,The bill due date is 2026-07-30.
+LESCO_0006,practice_01,What percentage of the printed current bill consists of taxes?,Taxes account for 31.33% of the current bill.
+LESCO_0006,practice_02,How much extra is the highest printed after-due amount compared with the within-due amount?,The after-due amount is 351 rs higher than the within-due amount.
+LESCO_0006,practice_03,Which month has the highest units in the printed historical period?,The month with the highest units is 2025-08.
+LESCO_0006,practice_04,Which month has the lowest units in the printed historical period?,The month with the lowest units is 2026-01.
+LESCO_0006,practice_05,What is the average consumption across the printed historical months?,The average consumption is 275.25 kWh.
+LESCO_0006,practice_06,What is the total consumption across the printed historical months?,The total consumption is 3303 kWh.
+LESCO_0006,practice_07,How many printed historical months have consumption above 200 kWh?,9 months had consumption above 200 kWh.
+LESCO_0006,practice_08,How many printed historical months have consumption below 100 kWh?,0 months had consumption below 100 kWh.
+LESCO_0006,practice_09,What is the average billed amount across the printed billing history?,The average billed amount is 27222.08 PKR.
+LESCO_0006,practice_10,What is the difference between the current and previous meter readings?,The difference between the current and previous meter readings is 65 units.
+LESCO_0006,practice_11,"What is the printed arrears amount, preserving any credit sign?",The printed arrears amount is 39411.2 PKR.
+LESCO_0006,practice_12,What is the bill due date?,The bill due date is 2026-09-09.

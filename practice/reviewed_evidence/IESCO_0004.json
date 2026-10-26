@@ -1,0 +1,642 @@
+{
+  "practice_only": true,
+  "image_sha256": "f989b88a629390d991ec0988cfdcfb6745c7e29554491cf0b0f017079bcb681a",
+  "method": "Codex visual review, selected manual transcription; not runtime LLM extraction.",
+  "extraction": {
+    "bill": {
+      "provider": "IESCO",
+      "tariff": null,
+      "sanctioned_load_kw": null,
+      "bill_month": null,
+      "reading_date": null,
+      "issue_date": null,
+      "due_date": "2026-10-08",
+      "previous_reading": 9301.0,
+      "current_reading": 9459.0,
+      "units_consumed": 158.0,
+      "charges": [],
+      "total_charges": null,
+      "taxes": [],
+      "total_taxes": 498.0,
+      "current_bill": 3267.0,
+      "arrears": 0.0,
+      "payable_within_due_date": 3535.0,
+      "payable_after_due_date": 3812.0
+    },
+    "evidence": {
+      "facts": [
+        {
+          "id": "provider",
+          "label": "provider",
+          "value": "IESCO",
+          "kind": "text",
+          "unit": "",
+          "section": "Provider logo/header",
+          "printed_text": "IESCO",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "current_bill",
+          "label": "current_bill",
+          "value": "3267",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Bill summary / charges breakdown",
+          "printed_text": "3267",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "total_taxes",
+          "label": "total_taxes",
+          "value": "498",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Bill summary / charges breakdown",
+          "printed_text": "498",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "arrears",
+          "label": "arrears",
+          "value": "0",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Bill summary / charges breakdown",
+          "printed_text": "0",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "payable_within_due_date",
+          "label": "payable_within_due_date",
+          "value": "3535",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Bill summary / charges breakdown",
+          "printed_text": "3535",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "payable_after_due_date",
+          "label": "payable_after_due_date",
+          "value": "3812",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Bill summary / charges breakdown",
+          "printed_text": "3812",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "units_consumed",
+          "label": "units_consumed",
+          "value": "158",
+          "kind": "number",
+          "unit": "kWh",
+          "section": "Meter information",
+          "printed_text": "158",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "previous_reading",
+          "label": "previous_reading",
+          "value": "9301",
+          "kind": "number",
+          "unit": "kWh",
+          "section": "Meter information",
+          "printed_text": "9301",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "current_reading",
+          "label": "current_reading",
+          "value": "9459",
+          "kind": "number",
+          "unit": "kWh",
+          "section": "Meter information",
+          "printed_text": "9459",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "due_date",
+          "label": "due_date",
+          "value": "2026-10-08",
+          "kind": "date",
+          "unit": "",
+          "section": "Bill summary / charges breakdown",
+          "printed_text": "2026-10-08",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "fpa_total",
+          "label": "fpa_total",
+          "value": "267",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Bill summary / charges breakdown",
+          "printed_text": "267",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2025_09_units",
+          "label": "2025-09 usage",
+          "value": "20",
+          "kind": "number",
+          "unit": "kWh",
+          "section": "Bill history",
+          "printed_text": "20",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2025_10_units",
+          "label": "2025-10 usage",
+          "value": "163",
+          "kind": "number",
+          "unit": "kWh",
+          "section": "Bill history",
+          "printed_text": "163",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2025_11_units",
+          "label": "2025-11 usage",
+          "value": "148",
+          "kind": "number",
+          "unit": "kWh",
+          "section": "Bill history",
+          "printed_text": "148",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2025_12_units",
+          "label": "2025-12 usage",
+          "value": "102",
+          "kind": "number",
+          "unit": "kWh",
+          "section": "Bill history",
+          "printed_text": "102",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_01_units",
+          "label": "2026-01 usage",
+          "value": "105",
+          "kind": "number",
+          "unit": "kWh",
+          "section": "Bill history",
+          "printed_text": "105",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_02_units",
+          "label": "2026-02 usage",
+          "value": "118",
+          "kind": "number",
+          "unit": "kWh",
+          "section": "Bill history",
+          "printed_text": "118",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_03_units",
+          "label": "2026-03 usage",
+          "value": "104",
+          "kind": "number",
+          "unit": "kWh",
+          "section": "Bill history",
+          "printed_text": "104",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_04_units",
+          "label": "2026-04 usage",
+          "value": "133",
+          "kind": "number",
+          "unit": "kWh",
+          "section": "Bill history",
+          "printed_text": "133",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_05_units",
+          "label": "2026-05 usage",
+          "value": "176",
+          "kind": "number",
+          "unit": "kWh",
+          "section": "Bill history",
+          "printed_text": "176",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_06_units",
+          "label": "2026-06 usage",
+          "value": "197",
+          "kind": "number",
+          "unit": "kWh",
+          "section": "Bill history",
+          "printed_text": "197",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_07_units",
+          "label": "2026-07 usage",
+          "value": "110",
+          "kind": "number",
+          "unit": "kWh",
+          "section": "Bill history",
+          "printed_text": "110",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_08_units",
+          "label": "2026-08 usage",
+          "value": "47",
+          "kind": "number",
+          "unit": "kWh",
+          "section": "Bill history",
+          "printed_text": "47",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2025_09_billed",
+          "label": "2025-09 billed",
+          "value": "215",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "215",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2025_09_payment",
+          "label": "2025-09 payment",
+          "value": "215",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "215",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2025_10_billed",
+          "label": "2025-10 billed",
+          "value": "1930",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "1930",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2025_10_payment",
+          "label": "2025-10 payment",
+          "value": "1930",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "1930",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2025_11_billed",
+          "label": "2025-11 billed",
+          "value": "1971",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "1971",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2025_11_payment",
+          "label": "2025-11 payment",
+          "value": "1971",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "1971",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2025_12_billed",
+          "label": "2025-12 billed",
+          "value": "1357",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "1357",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2025_12_payment",
+          "label": "2025-12 payment",
+          "value": "1357",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "1357",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_01_billed",
+          "label": "2026-01 billed",
+          "value": "1415",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "1415",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_01_payment",
+          "label": "2026-01 payment",
+          "value": "1415",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "1415",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_02_billed",
+          "label": "2026-02 billed",
+          "value": "2016",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "2016",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_02_payment",
+          "label": "2026-02 payment",
+          "value": "2016",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "2016",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_03_billed",
+          "label": "2026-03 billed",
+          "value": "2665",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "2665",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_03_payment",
+          "label": "2026-03 payment",
+          "value": "2665",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "2665",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_04_billed",
+          "label": "2026-04 billed",
+          "value": "3130",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "3130",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_04_payment",
+          "label": "2026-04 payment",
+          "value": "3130",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "3130",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_05_billed",
+          "label": "2026-05 billed",
+          "value": "3634",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "3634",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_05_payment",
+          "label": "2026-05 payment",
+          "value": "3634",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "3634",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_06_billed",
+          "label": "2026-06 billed",
+          "value": "894",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "894",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_06_payment",
+          "label": "2026-06 payment",
+          "value": "3600",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "3600",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_07_billed",
+          "label": "2026-07 billed",
+          "value": "566",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "566",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_07_payment",
+          "label": "2026-07 payment",
+          "value": "0",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "0",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_08_billed",
+          "label": "2026-08 billed",
+          "value": "3198",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "3198",
+          "confidence": "medium",
+          "bbox": null
+        },
+        {
+          "id": "history_2026_08_payment",
+          "label": "2026-08 payment",
+          "value": "3198",
+          "kind": "number",
+          "unit": "PKR",
+          "section": "Billing and payment history",
+          "printed_text": "3198",
+          "confidence": "medium",
+          "bbox": null
+        }
+      ],
+      "history": [
+        {
+          "month_label": "2025-09",
+          "month": "2025-09",
+          "units_fact": "history_2025_09_units",
+          "billed_fact": "history_2025_09_billed",
+          "payment_fact": "history_2025_09_payment"
+        },
+        {
+          "month_label": "2025-10",
+          "month": "2025-10",
+          "units_fact": "history_2025_10_units",
+          "billed_fact": "history_2025_10_billed",
+          "payment_fact": "history_2025_10_payment"
+        },
+        {
+          "month_label": "2025-11",
+          "month": "2025-11",
+          "units_fact": "history_2025_11_units",
+          "billed_fact": "history_2025_11_billed",
+          "payment_fact": "history_2025_11_payment"
+        },
+        {
+          "month_label": "2025-12",
+          "month": "2025-12",
+          "units_fact": "history_2025_12_units",
+          "billed_fact": "history_2025_12_billed",
+          "payment_fact": "history_2025_12_payment"
+        },
+        {
+          "month_label": "2026-01",
+          "month": "2026-01",
+          "units_fact": "history_2026_01_units",
+          "billed_fact": "history_2026_01_billed",
+          "payment_fact": "history_2026_01_payment"
+        },
+        {
+          "month_label": "2026-02",
+          "month": "2026-02",
+          "units_fact": "history_2026_02_units",
+          "billed_fact": "history_2026_02_billed",
+          "payment_fact": "history_2026_02_payment"
+        },
+        {
+          "month_label": "2026-03",
+          "month": "2026-03",
+          "units_fact": "history_2026_03_units",
+          "billed_fact": "history_2026_03_billed",
+          "payment_fact": "history_2026_03_payment"
+        },
+        {
+          "month_label": "2026-04",
+          "month": "2026-04",
+          "units_fact": "history_2026_04_units",
+          "billed_fact": "history_2026_04_billed",
+          "payment_fact": "history_2026_04_payment"
+        },
+        {
+          "month_label": "2026-05",
+          "month": "2026-05",
+          "units_fact": "history_2026_05_units",
+          "billed_fact": "history_2026_05_billed",
+          "payment_fact": "history_2026_05_payment"
+        },
+        {
+          "month_label": "2026-06",
+          "month": "2026-06",
+          "units_fact": "history_2026_06_units",
+          "billed_fact": "history_2026_06_billed",
+          "payment_fact": "history_2026_06_payment"
+        },
+        {
+          "month_label": "2026-07",
+          "month": "2026-07",
+          "units_fact": "history_2026_07_units",
+          "billed_fact": "history_2026_07_billed",
+          "payment_fact": "history_2026_07_payment"
+        },
+        {
+          "month_label": "2026-08",
+          "month": "2026-08",
+          "units_fact": "history_2026_08_units",
+          "billed_fact": "history_2026_08_billed",
+          "payment_fact": "history_2026_08_payment"
+        }
+      ],
+      "history_complete": true,
+      "net_metering": false,
+      "missing": [
+        "Only selected manual transcriptions supplied; full live extraction not performed."
+      ],
+      "ambiguities": [
+        "PRACTICE ONLY: selected evidence is unlabelled and not verified official ground truth."
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "notice": "PRACTICE ONLY. Selected facts manually transcribed by Codex after viewing the five training images. This is neither model extraction nor official ground truth. Omitted Level 1 fields stay null. Uncertain cells stay unreadable. Never used in official mode.",
+  "bills": {
+    "KESC_0008": {
+      "provider": "KE", "net_metering": false,
+      "facts": {"current_bill":"3430.24", "total_taxes":"569.62", "arrears":"-0.53", "payable_within_due_date":"3430", "payable_after_due_date":"3716", "units_consumed":"151", "previous_reading":"8819", "current_reading":"8970", "due_date":"2026-04-21"},
+      "history_start":"2025-04", "historical_units":["141","138","197","239","203","176","173","187","124","96","88","115","151"],
+      "billing_history":[["2026-03","2577.31","2577.00"],["2026-02","2782.51","2783.00"],["2026-01","2780.55","2780.00"]]
+    },
+    "KESC_0004": {
+      "provider": "KE", "net_metering": true,
+      "facts": {"current_bill":"45570.25", "total_taxes":"7472.24", "arrears":"-91877.02", "payable_within_due_date":"0", "payable_after_due_date":"0", "units_consumed":"901", "due_date":"2026-07-13", "net_metering_benefit":"-114640.13", "outstanding_balance":"-160946.90"},
+      "history_start":"2025-06", "historical_units":["943","637","665","555","522","143","21","114","131","187","298","599","901"],
+      "billing_history":[["2026-05","32842.35","3531.00"],["2026-04","18957.94","27914.00"],["2026-03","13564.05","29351.00"]]
+    },
+    "IESCO_0004": {
+      "provider": "IESCO", "net_metering": false,
+      "facts": {"current_bill":"3267", "total_taxes":"498", "arrears":"0", "payable_within_due_date":"3535", "payable_after_due_date":"3812", "units_consumed":"158", "previous_reading":"9301", "current_reading":"9459", "due_date":"2026-10-08", "fpa_total":"267"},
+      "history_start":"2025-09", "historical_units":["20","163","148","102","105","118","104","133","176","197","110","47"],
+      "billing_history":[["2025-09","215","215"],["2025-10","1930","1930"],["2025-11","1971","1971"],["2025-12","1357","1357"],["2026-01","1415","1415"],["2026-02","2016","2016"],["2026-03","2665","2665"],["2026-04","3130","3130"],["2026-05","3634","3634"],["2026-06","894","3600"],["2026-07","566","0"],["2026-08","3198","3198"]]
+    },
+    "LESCO_0005": {
+      "provider": "LESCO", "net_metering": true,
+      "facts": {"current_bill":"20726", "total_taxes":"3358.23", "arrears":"-75496", "payable_within_due_date":"54770CR", "due_date":"2026-07-30"},
+      "history_start":"2025-07", "historical_units":[null,"225","-142","-176","-440","-162","359","-809","-818","-402","-1955","-152"],
+      "billing_history":[["2025-07","-35552",null],["2025-08","-21364",null],["2025-09","-22475",null],["2025-10","-21274",null],["2025-11","-20094",null],["2025-12","-29501",null],["2026-01","-8052",null],["2026-02","-6686",null],["2026-03","-38209",null],["2026-04","-34226",null],["2026-05","-30243",null],["2026-06","-75496",null]]
+    },
+    "LESCO_0006": {
+      "provider": "LESCO", "net_metering": false,
+      "facts": {"current_bill":"5501", "total_taxes":"1723.51", "payable_within_due_date":"44912", "payable_after_due_date":"45263", "units_consumed":"65", "previous_reading":"22238", "current_reading":"22303", "due_date":"2026-09-09"},
+      "history_start":"2025-08", "historical_units":["440","407","243","166","206","124","187","257","264","434","350","225"],
+      "billing_history":[["2025-08","52906","52906"],["2025-09","23954","25632"],["2025-10","15558",null],["2025-11","27502","27502"],["2025-12","13486",null],["2026-01","23089","23089"],["2026-02","12775",null],["2026-03","31115","31692"],["2026-04","17999",null],["2026-05","47317","48257"],["2026-06","22523",null],["2026-07","38441",null]]
+    }
+  }
+}

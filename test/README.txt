@@ -1,0 +1,1 @@
+OFFICIAL INPUTS ONLY. Place the released images in bills/ and the unchanged official level1.csv and level2.csv templates in csv/. No official files were available at initial build time. Practice files live separately in practice/.
